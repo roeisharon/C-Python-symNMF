@@ -80,7 +80,7 @@ python3 symnmf.py 3 symnmf data.csv
 ```
 
 **Output:**  
-A matrix \( H \) (size \( n \times k \)), printed with values formatted to 4 decimal places.
+A matrix \( H \) (size \( n x k \)), printed with values formatted to 4 decimal places.
 
 ---
 
