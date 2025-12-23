@@ -143,10 +143,3 @@ Install Python dependencies:
 pip install numpy scikit-learn
 ```
 
----
-
-## 📄 License & Notes
-
-This repository is shared for **academic and portfolio purposes** only.  
-The implementation follows course specifications from Tel Aviv University (Final Project in Software 1 – 2025).  
-Not intended for commercial or production use.
