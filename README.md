@@ -72,7 +72,7 @@ python3 symnmf.py k goal data.csv
   - `ddg`  → Diagonal degree matrix  
   - `norm` → Normalized similarity matrix  
   - `symnmf` → Full SymNMF factorization  
-- `data.csv` — Input data file, comma-separated
+- `data.csv`/`data.text` — Input data file, comma-separated (3 input samples provided)
 
 **Example:**  
 ```bash
