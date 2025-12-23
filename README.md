@@ -123,29 +123,21 @@ You can directly test the C executable:
 
 ## 🧮 Mathematical Components
 
-1. **Similarity Matrix (A):**
-   \[
-   A_{ij} = e^{-\frac{\|x_i - x_j\|^2}{2}}
-   \]
+### 1. Similarity Matrix (A)
+Aᵢⱼ = exp( −‖xᵢ − xⱼ‖² / 2 )
 
-2. **Diagonal Degree Matrix (D):**
-   \[
-   D_{ii} = \sum_j A_{ij}
-   \]
+### 2. Diagonal Degree Matrix (D)
+Dᵢᵢ = Σⱼ Aᵢⱼ
 
-3. **Normalized Matrix (W):**
-   \[
-   W = D^{-\frac{1}{2}} A D^{-\frac{1}{2}}
-   \]
+### 3. Normalized Matrix (W)
+W = D⁻¹ᐟ² · A · D⁻¹ᐟ²
 
-4. **Update Rule (Iterative SymNMF):**
-   \[
-   H_{t+1} = H_t \cdot \left(1 - \beta + \beta \cdot \frac{W H_t}{H_t H_t^T H_t}\right)
-   \]
-   Iteration continues until convergence by Frobenius norm:  
-   \[
-   \| H_{t+1} - H_t \|_F < \epsilon
-   \]
+### 4. Update Rule (Iterative SymNMF)
+Hₜ₊₁ = Hₜ ⊙ ( (1 − β) + β · (W · Hₜ) / (Hₜ · Hₜᵀ · Hₜ) )
+
+**Convergence criterion (Frobenius norm):**
+
+‖Hₜ₊₁ − Hₜ‖₍F₎ < ε
 
 ---
 
