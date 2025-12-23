@@ -121,26 +121,6 @@ You can directly test the C executable:
 
 ---
 
-## 🧮 Mathematical Components
-
-### 1. Similarity Matrix (A)
-Aᵢⱼ = exp( −‖xᵢ − xⱼ‖² / 2 )
-
-### 2. Diagonal Degree Matrix (D)
-Dᵢᵢ = Σⱼ Aᵢⱼ
-
-### 3. Normalized Matrix (W)
-W = D⁻¹ᐟ² · A · D⁻¹ᐟ²
-
-### 4. Update Rule (Iterative SymNMF)
-Hₜ₊₁ = Hₜ ⊙ ( (1 − β) + β · (W · Hₜ) / (Hₜ · Hₜᵀ · Hₜ) )
-
-**Convergence criterion (Frobenius norm):**
-
-‖Hₜ₊₁ − Hₜ‖₍F₎ < ε
-
----
-
 ## 🧩 Key Features
 
 - Full implementation of **SymNMF** in pure C with dynamic memory handling.  
