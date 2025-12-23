@@ -19,7 +19,6 @@ The project extends the **KMeans++** assignment by comparing **SymNMF-based clus
 | `kmeans.py` | Reused and adapted from HW1 — standalone Python implementation of the KMeans algorithm. |
 | `analysis.py` | Final analysis script comparing **SymNMF** and **KMeans** clustering results using **silhouette scores**. |
 | `Makefile` | Compiles and links the core C files into an executable. |
-| `Final_Project.pdf` | Project specification and background reference. |
 
 ---
 
