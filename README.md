@@ -66,7 +66,7 @@ python3 symnmf.py k goal data.csv
 
 **Arguments:**
 
-- `k` — Number of clusters  
+- `k` — Number of clusters (1 ≤ k < n)  
 - `goal` — One of:  
   - `sym`  → Similarity matrix  
   - `ddg`  → Diagonal degree matrix  
